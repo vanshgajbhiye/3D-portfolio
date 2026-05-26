@@ -239,19 +239,30 @@ section{
 
 
 .projects{
-    padding: 100px 10%;
+  padding: 80px 5%;
     color: white;
+    text-align: left;
+}
 
+.project-text{
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
 }
 
 .project h2{
-    font-size: 55px;
+   font-size: 55px;
     margin-bottom: 40px;
 }
 
 .project-card{
   background: rgba(0, 255, 255, 0.08);
   border: 1px solid cyan;
+
+  max-width: 500px;
+  margin-left:0;
+  margin-right: auto;
 
   padding: 25px;
   border-radius: 20px;
@@ -264,25 +275,53 @@ section{
 }
 
 .project-card:hover{
-  transform:translate(-10px) scale(1.03);
-  background: rgba(0, 255, 255, 0.15);
+   transform:translate(-10px) scale(1.03);
   box-shadow:0 0 30px cyan;
 }
 
 .project-card h3{
-    font-size: 22px;
-    margin-bottom: 10px;
+      font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .project-card p{
-    font-size: 15px;
+   font-size: 16px;
     color: #d8eaff;
+    line-height: 1.7;
+
+}
+
+.projects-grid{
+    display:flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
 .contact{
     text-align: center;
     padding: 80px 20px;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+.project-card{
+    width: 320px;
+    background: rgba(0, 255, 255, 0.08);
+    border: 1px solid cyan;
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px cyan;
+    transition: 0.4s ease;
 }
 
 .contact from{
