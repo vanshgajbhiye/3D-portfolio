@@ -207,6 +207,36 @@ section{
 }
 
 
+.hexagon img[src*="html5"]{
+    filter: drop-shadow(0 0 12px orange)
+}
+
+.hexagon img[src*="css3"]{
+    filter: drop-shadow(0 0 12px #00ccff)
+}
+
+.hexagon img[src*="c-original"]{
+    filter: drop-shadow(0 0 12px white)
+}
+
+.hexagon img[src*="cplusplus"]{
+    filter: drop-shadow(0 0 12px #66a3ff)
+}
+
+.hexagon img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 12px #00f7ff);
+    transition: 0.4s;
+}
+
+.hexagon:hover img{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 12px #ff00ea)
+}
+
+
 
 .projects{
     padding: 100px 10%;
